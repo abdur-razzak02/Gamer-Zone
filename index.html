@@ -1,124 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamer Zone</title>
+    <!-- tailwind css cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gamer Zone</title>
-  <!-- tailwind css cdn-->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <header class="max-w-screen-xl m-auto px-5">
+      <div
+        class="nav-bar xl:flex sm:flex xl:justify-between sm:justify-between sm:p-3"
+      >
+        <div class="logo flex gap-3 justify-center items-center py-5">
+          <img src="images/logo.png" alt="logo" class="w-12" />
+          <a class="text-2xl font-extrabold tracking-wide"
+            ><span class="text-[#FF42A5]">G</span>amer</a
+          >
+        </div>
+        <div class="nav-menu flex justify-center">
+          <ul
+            class="text-center items-center flex sm:flex sm:flex-row flex-col xl:flex-row gap-3 xl:gap-5"
+          >
+            <li><a href="">About Us</a></li>
+            <li><a href="">Developers</a></li>
+            <li
+              class="bg-gray-200 px-10 sm:px-5 py-2 rounded-lg flex gap-3 items-center"
+            >
+              Follow Us On
+              <a href="https://www.youtube.com/@ARYeamin" target="_blank"
+                ><img
+                  src="images/icons/youtube.png"
+                  alt="youtube icon"
+                  class="h-6"
+              /></a>
 
-<body>
-  <header class="max-w-screen-xl m-auto px-5">
-    <div class="nav-bar xl:flex sm:flex xl:justify-between sm:justify-between sm:p-5">
-      <div class="logo flex gap-3 justify-center items-center py-5">
-        <img src="images/logo.png" alt="logo" class="w-12" />
-        <a class="text-2xl font-extrabold tracking-wide"><span class="text-[#FF42A5]">G</span>amer</a>
+              <a href="https://www.youtube.com/@ARYeamin" target="_blank"
+                ><img
+                  src="images/icons/tik-tok.png"
+                  alt="tik-tok icon"
+                  class="h-5"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="nav-menu flex justify-center">
-        <ul class="text-center items-center flex sm:flex sm:flex-row flex-col xl:flex-row gap-3 xl:gap-5">
-          <li><a href="">About Us</a></li>
-          <li><a href="">Developers</a></li>
-          <li class="bg-gray-200 px-10 sm:px-5 py-2 rounded-lg flex gap-3 items-center">
-            Follow Us On
-            <a href="https://www.youtube.com/@ARYeamin" target="_blank"><img src="images/icons/youtube.png"
-                alt="youtube icon" class="h-6" /></a>
+    </header>
 
-            <a href="https://www.youtube.com/@ARYeamin" target="_blank"><img src="images/icons/tik-tok.png"
-                alt="tik-tok icon" class="h-5" /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    <main class="mb-80">
+      <!-- banner -->
+      <section class="max-w-screen-xl m-auto px-5 sm:px-0">
+        <!-- banner container -->
+        <div class="py-10 sm:py-0 flex flex-col xl:flex-row sm:flex-row gap-10">
+          <!-- banner text -->
+          <div
+            class="bg-[url('/images/banner-text-bg.png')] bg-cover bg-no-repeat bg-center order-2 px-12 sm:px-5 py-10 xl:w-[50%] sm:w-[50%]"
+          >
+            <div class="xl:px-20 xl:flex xl:flex-col justify-center h-[100%]">
+              <h1 class="text-4xl xl:text-5xl font-semibold mb-3">
+                Play Like The
+              </h1>
+              <h2
+                class="text-5xl xl:text-7xl font-black mb-5 inline-block bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent"
+              >
+                G.O.A.T.
+              </h2>
+              <p class="flex gap-2 items-center mb-2 xl:text-2xl">
+                <img
+                  src="images/icons/play.png"
+                  alt=""
+                  class="w-5 h-5"
+                />1-Click instant play
+              </p>
 
-  <main class="mb-40">
-    <!-- banner -->
-    <section class="max-w-screen-xl m-auto px-5 sm:px-0">
-      <!-- banner container -->
-      <div class="py-10 sm:py-0 flex flex-col xl:flex-row sm:flex-row gap-10">
-        <!-- banner text -->
+              <p class="flex gap-2 items-center mb-2 xl:text-2xl">
+                <img
+                  src="images/icons/downloads.png"
+                  alt=""
+                  class="w-5 h-5"
+                />No Download
+              </p>
+
+              <p class="flex gap-2 items-center mb-5 xl:text-2xl">
+                <img src="images/icons/group.png" alt="" class="w-5 h-5" />1000s
+                of online games
+              </p>
+
+              <div class="xl:flex sm:flex">
+                <button
+                  class="bg-[#FF42A5] text-white font-medium rounded-full py-2 px-5 mr-2 xl:mr-3 xl:text-xl xl:px-9 xl:py-4"
+                >
+                  SIGN IN
+                </button>
+                <button
+                  class="bg-[#4EC5F7] text-white font-medium rounded-full py-2 px-5 xl:text-xl xl:px-9 xl:py-4"
+                >
+                  GO ROGUE
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- banner image -->
+          <div
+            class="order-0 xl:order-2 sm:order-3 xl:w-[50%] sm:w-[50%] sm:p-5"
+          >
+            <img src="images/banner-bg.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- we are gamers section -->
+      <section class="sm:bg-[#FDF7FD]">
+        <!-- we are gamers container -->
         <div
-          class="bg-[url('/images/banner-text-bg.png')] bg-cover bg-no-repeat bg-center order-2 px-16 sm:px-5 py-10 xl:w-[50%] sm:w-[50%]">
-          <div class="xl:px-20 xl:flex xl:flex-col justify-center h-[100%]">
-            <h1 class="text-4xl xl:text-5xl font-semibold mb-3">
-              Play Like The
-            </h1>
+          class="max-w-screen-xl m-auto sm:py-5 xl:py-5 flex flex-col xl:flex-row sm:flex-row"
+        >
+          <!-- gamers banner image -->
+          <div class="xl:w-[60%] sm:w-[50%] flex">
+            <img src="images/gamers.png" alt="" />
+          </div>
+
+          <!-- gamers text -->
+          <div
+            class="inline-block text-center sm:items-end sm:text-right sm:w-[50%] xl:w-[40%] sm:flex sm:flex-col justify-center px-5 py-10 sm:py-0"
+          >
             <h2
-              class="text-5xl xl:text-7xl font-black mb-5 inline-block bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent">
-              G.O.A.T.
+              class="text-3xl xl:text-6xl sm:text-5xl font-black mb-5 sm:mb-3 inline-block bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent"
+            >
+              We are gamer
             </h2>
-            <p class="flex gap-2 items-center mb-2 xl:text-2xl">
-              <img src="images/icons/play.png" alt="" class="w-5 h-5" />1-Click instant play
+            <p class="text-gray-500 text-lg sm:text-sm">
+              An international digital games and entertainment company. We
+              develop, publish and distribute multiplayer mobile games. We reach
+              over 400 million players each month and our audience keeps
+              growing.
             </p>
-
-            <p class="flex gap-2 items-center mb-2 xl:text-2xl">
-              <img src="images/icons/downloads.png" alt="" class="w-5 h-5" />No Download
+            <button
+              class="bg-[#FF42A5] text-white font-medium rounded-full py-2 my-5 sm:my-3 px-8 sm:w-48"
+            >
+              kNOW MORE
+            </button>
+            <p
+              class="font-semibold text-xl sm:text-lg xl:text-2xl text-gray-500"
+            >
+              Our purpose...
             </p>
+            <h5 class="font-bold text-2xl sm:text-xl xl:text-2xl">
+              “unleash the gamer in everyone”
+            </h5>
+          </div>
+        </div>
+      </section>
 
-            <p class="flex gap-2 items-center mb-5 xl:text-2xl">
-              <img src="images/icons/group.png" alt="" class="w-5 h-5" />1000s
-              of online games
-            </p>
+      <!-- online games -->
+      <section class="max-w-screen-xl m-auto px-5 sm:mt-10 xl:mt-16 mb-10">
+        <!-- online games container -->
+        <div>
+          <h1
+            class="text-3xl sm:text-5xl mb-3 font-black text-center w-[70%] sm:w-[100%] m-auto"
+          >
+            Online Games
+            <span
+              class="bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent"
+              >Funny Videos</span
+            >
+          </h1>
+          <p class="text-gray-500 text-lg text-center mb-5 xl:mb-8">
+            A Collection of Hilarious Videos to Brighten Your Day
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col xl:flex-row gap-7 sm:gap-4 sm:flex-row">
+          <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+            <figure>
+              <img src="images/online-video-1.png" alt="online games" />
+            </figure>
+            <div class="card-body py-5 px-3">
+              <p>No Download. No Installs. Play games Instantly on Gamer.</p>
+            </div>
+          </div>
 
-            <div class="xl:flex sm:flex">
-              <button
-                class="bg-[#FF42A5] text-white font-medium rounded-full py-2 px-7 mr-2 xl:mr-3 xl:text-xl xl:px-9 xl:py-4">
-                SIGN IN
-              </button>
-              <button class="bg-[#4EC5F7] text-white font-medium rounded-full py-2 px-7 xl:text-xl xl:px-9 xl:py-4">
-                GO ROGUE
-              </button>
+          <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+            <figure>
+              <img src="images/online-video-2.png" alt="online games" />
+            </figure>
+            <div class="card-body py-5 px-3">
+              <p>Did you score? #unblocked #school</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+            <figure>
+              <img src="images/online-video-3.png" alt="online games" />
+            </figure>
+            <div class="card-body py-5 px-3">
+              <p>Breaking game records like OG</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+            <figure>
+              <img src="images/online-video-4.png" alt="online games" />
+            </figure>
+            <div class="card-body py-5 px-3">
+              <p>Busted gaming on school laptop, but you are still lit.</p>
             </div>
           </div>
         </div>
-        <!-- banner image -->
-        <div class="order-0 xl:order-2 sm:order-3 xl:w-[50%] sm:w-[50%]">
-          <img src="images/banner-bg.png" alt="" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class=" sm:bg-[#FDF7FD]">
-      <!-- we are gamers container -->
-      <div class="max-w-screen-xl m-auto sm:py-5 flex flex-col xl:flex-row sm:flex-row">
-
-        <!-- gamers banner image -->
-        <div class="sm:w-[60%]">
-          <img src="images/gamers.png" alt="" />
-        </div>
-
-        <!-- gamers text -->
-        <div class="inline-block text-center sm:items-end sm:text-right sm:w-[40%] sm:flex sm:flex-col justify-center px-5 py-10 sm:py-0">
-            <h2
-              class="text-4xl sm:text-6xl font-black mb-5 inline-block bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent">
-              We are gamer
-            </h2>
-            <p class="text-gray-500 text-lg">
-              An international digital games and entertainment company. We develop, publish and distribute multiplayer
-              mobile games. We reach over 400 million players each month and our audience keeps growing.
+      <!-- play Instantly -->
+      <section class="max-w-screen-xl m-auto px-5 sm:mt-10 xl:mt-16 mb-10">
+        <!-- game 1 -->
+        <div class="sm:flex gap-10 sm:mb-20">
+          <!-- game texts -->
+          <div
+            class="sm:w-[50%] sm:flex sm:flex-col sm:px-10 text-center sm:text-right sm:self-center xl:items-end"
+          >
+            <h1
+              class="text-3xl xl:text-5xl mb-3 font-black w-[65%] sm:w-[100%] m-auto"
+            >
+              <span
+                class="bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent"
+                >Play Instantly</span
+              >
+              <br />
+              No Downloads <br />
+              No Installs.
+            </h1>
+            <p class="text-gray-500 text-lg mb-5 sm:mb-0 xl:mb-8 xl:w-[65%]">
+              Play games online for free without downloading. Just click the
+              Play button and play instantly in your browser.
             </p>
-            <button
-              class="bg-[#FF42A5] text-white font-medium rounded-full py-2 my-5 px-8 sm:w-52">
-              kNOW MORE
-            </button>
-            <p class="font-semibold text-xl sm:text-2xl text-gray-500">
-              Our purpose...
-            </p>
-            <h5 class="font-bold text-2xl sm:text-3xl">
-              “unleash the gamer in everyone”
-            </h5>
+          </div>
+          <!-- game image -->
+          <div class="sm:w-[50%]">
+            <div class="flex justify-end items-start">
+              <img
+                src="images/play-instant.png"
+                alt="instant play"
+                class="relative"
+              />
+            </div>
+            <!-- <div>
+              <img src="images/play-instant-sub.png" alt="instant play" class="absolute right-52 bottom--10">
+            </div> -->
+          </div>
         </div>
-      </div>
-    </section>
+
+        <!-- game 2 -->
+        <div class="sm:flex gap-10">
+          <!-- game image -->
+          <div class="sm:w-[50%]">
+            <div class="flex justify-end items-start">
+              <img
+                src="images/play-online.png"
+                alt="instant play"
+                class="relative"
+              />
+            </div>
+            <!-- <div>
+              <img src="images/play-online-sub.png" alt="instant play" class="absolute right-52 bottom--10">
+            </div> -->
+          </div>
+          <!-- game texts -->
+          <div
+            class="sm:w-[50%] sm:flex sm:flex-col sm:px-10 text-center sm:text-right sm:self-center xl:items-end"
+          >
+            <h1
+              class="text-3xl xl:text-5xl mb-3 font-black w-[65%] sm:w-[100%] m-auto"
+            >
+              <span
+                class="bg-gradient-to-t from-[#F948B2] to-[#8758F1] bg-clip-text text-transparent"
+                >Play Instantly</span
+              >
+              <br />
+              No Downloads <br />
+              No Installs.
+            </h1>
+            <p class="text-gray-500 text-lg mb-5 sm:mb-0 xl:mb-8 xl:w-[65%]">
+              Play games online for free without downloading. Just click the
+              Play button and play instantly in your browser.
+            </p>
+          </div>
+        </div>
 
 
-  </main>
-</body>
 
+
+      </section>
+    </main>
+  </body>
 </html>
