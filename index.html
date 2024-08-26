@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gamer Zone</title>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- tailwind & daisyui cdn-->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -133,50 +135,68 @@
           A Collection of Hilarious Videos to Brighten Your Day
         </p>
       </div>
+
       <!-- cards -->
       <div class="flex flex-col xl:flex-row gap-7 sm:gap-4 sm:flex-row">
-        <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+
+        <div class="card bg-base-100 w-[100%] shadow-xl relative">
           <figure>
-            <img src="images/online-video-1.png" alt="online games" />
+            <img src="images/online-video-1.png" alt="online games" class="hover:brightness-50"/>
           </figure>
           <div class="card-body py-5 px-3">
             <p>No Download. No Installs. Play games Instantly on Gamer.</p>
           </div>
+          <div class="absolute text-center top-1/3 sm:top-[25%] xl:top-1/3 left-[38%] sm:left-[20%] xl:left-1/3 text-xl text-white">
+            <i class="fa-solid fa-circle-play text-3xl"></i>
+            <p>Watch Now</p>
+          </div>
         </div>
 
-        <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+        <div class="card bg-base-100 w-[100%] shadow-xl">
           <figure>
-            <img src="images/online-video-2.png" alt="online games" />
+            <img src="images/online-video-2.png" alt="online games" class="hover:brightness-50"/>
           </figure>
           <div class="card-body py-5 px-3">
             <p>Did you score? #unblocked #school</p>
           </div>
+          <div class="absolute text-center top-1/3 sm:top-[25%] xl:top-1/3 left-[38%] sm:left-[20%] xl:left-1/3 text-xl text-white">
+            <i class="fa-solid fa-circle-play text-3xl"></i>
+            <p>Watch Now</p>
+          </div>
         </div>
 
-        <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+        <div class="card bg-base-100 w-[100%] shadow-xl">
           <figure>
-            <img src="images/online-video-3.png" alt="online games" />
+            <img src="images/online-video-3.png" alt="online games" class="hover:brightness-50"/>
           </figure>
           <div class="card-body py-5 px-3">
             <p>Breaking game records like OG</p>
           </div>
+          <div class="absolute text-center top-1/3 sm:top-[25%] xl:top-1/3 left-[38%] sm:left-[20%] xl:left-1/3 text-xl text-white">
+            <i class="fa-solid fa-circle-play text-3xl"></i>
+            <p>Watch Now</p>
+          </div>
         </div>
 
-        <div class="card bg-base-100 w-[100%] shadow-xl hover:bg-gray-300">
+        <div class="card bg-base-100 w-[100%] shadow-xl">
           <figure>
-            <img src="images/online-video-4.png" alt="online games" />
+            <img src="images/online-video-4.png" alt="online games" class="hover:brightness-50"/>
           </figure>
           <div class="card-body py-5 px-3">
             <p>Busted gaming on school laptop, but you are still lit.</p>
+          </div>
+          <div class="absolute text-center top-1/3 sm:top-[25%] xl:top-1/3 left-[38%] sm:left-[20%] xl:left-1/3 text-xl text-white">
+            <i class="fa-solid fa-circle-play text-3xl"></i>
+            <p>Watch Now</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- play Instantly -->
-    <section class="max-w-screen-xl m-auto px-5 sm:mt-10 xl:mt-16 mb-10">
+    <section class="max-w-screen-xl m-auto px-5 sm:mt-10 xl:mt-16 mb-20">
       <!-- game 1 -->
-      <div class="sm:flex gap-10 sm:mb-10">
+      <div class="sm:flex gap-10 mb-16 sm:mb-24">
         <!-- game texts -->
         <div class="sm:w-1/2 sm:flex sm:flex-col text-center sm:text-right sm:self-center xl:items-end xl:mr-32">
           <h1 class="text-3xl xl:text-5xl mb-3 font-black w-[65%] sm:w-[100%] m-auto">
@@ -191,14 +211,14 @@
             Play button and play instantly in your browser.
           </p>
         </div>
+
         <!-- game image -->
         <div class="sm:w-1/2">
-          <div class="flex justify-end items-start">
-            <img src="images/play-instant.png" alt="instant play" class="relative" />
+          <div class="flex justify-end items-start relative ">
+            <img src="images/play-instant.png" alt="instant play" class="w-3/4"/>
+            <img src="images/play-instant-sub.png" alt="instant play" class="absolute -bottom-10 left-5 w-1/3">
           </div>
-          <!-- <div>
-              <img src="images/play-instant-sub.png" alt="instant play" class="absolute right-52 bottom--10">
-            </div> -->
+              
         </div>
       </div>
 
@@ -223,12 +243,11 @@
 
         <!-- game image -->
         <div class="sm:w-1/2 sm:order-1">
-          <div class="flex justify-end items-start">
-            <img src="images/play-online.png" alt="instant play" class="relative" />
+          <div class="flex justify-start items-start relative">
+            <img src="images/play-online.png" alt="instant play" class="w-3/4"/>
+            <img src="images/play-online-sub.png" alt="instant play" class="absolute right-5 -bottom-10 w-1/3">
           </div>
-          <!-- <div>
-              <img src="images/play-online-sub.png" alt="instant play" class="absolute right-52 bottom--10">
-            </div> -->
+              
         </div>
       </div>
     </section>
